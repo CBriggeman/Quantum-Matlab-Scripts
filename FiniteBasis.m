@@ -38,6 +38,8 @@ Copsi1 = V(:,Ind(1));
 
 %Function space of infinate well states
 PsiInf(x) = [Psi0(1,x) Psi0(2,x) Psi0(3,x) Psi0(4,x)]';
+
+%Calculate state and probability functions
 Psi1 = sum(Copsi1.*PsiInf(x));
 Prob1 = (Psi1)^2;
 
@@ -53,6 +55,7 @@ Copsi4 = V(:,Ind(4));
 Psi4 = sum(Copsi4.*PsiInf(x));
 Prob4 = (Psi4)^2;
 
+%Plots probability function of the ground state
 h = matlabFunction(Prob1);
 fplot(h, [0 Lx])
 hold on
