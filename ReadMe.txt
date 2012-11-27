@@ -1,1 +1,1 @@
-These are some Matlab scipts I have made for my quantum mechanics class.
+These are some Matlab scripts I have made for my quantum mechanics class.
